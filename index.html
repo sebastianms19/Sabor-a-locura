@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor a locura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Sabor a locura</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <h2>¡Los mejores helados de la ciudad!</h2>
+            <p>Descubre nuestra variedad de sabores, cremosos y deliciosos, preparados con los mejores ingredientes.</p>
+        </div>
+    </section>
+
+    <!-- Menú de Helados -->
+    <section class="productos">
+        <div class="container">
+            <h2>Menú de Helados</h2>
+            <div class="producto">
+                <img src="https://www.hogarmania.com/archivos/202208/helado-chocolate-portada3-848x477x80xX.jpg" alt="Helado de Chocolate">
+                <h3>Helado de Chocolate</h3>
+                <p>Delicioso y cremoso helado de chocolate con un toque suave.</p>
+                <button class="agregar" onclick="agregarAlCarrito('Helado de Chocolate')">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://cuisinart.com.co/cdn/shop/articles/Helado_de_Fresa_Casero.jpg?v=1720632982&width=800" alt="Helado de Fresa">
+                <h3>Helado de Fresa</h3>
+                <p>Helado cremoso de fresa con un sabor fresco y afrutado.</p>
+                <button class="agregar" onclick="agregarAlCarrito('Helado de Fresa')">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://www.vitamixespana.com/recetas/wp-content/uploads/2017/05/helado-de-vainilla-vitamix.jpg" alt="Helado de Vainilla">
+                <h3>Helado de Vainilla</h3>
+                <p>Clásico helado de vainilla, cremoso y suave, ideal para todos.</p>
+                <button class="agregar" onclick="agregarAlCarrito('Helado de Vainilla')">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito -->
+    <section class="carrito">
+        <div class="container">
+            <h2>Tu Carrito</h2>
+            <ul id="carrito-lista">
+                <li>No has añadido productos al carrito.</li>
+            </ul>
+            <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sabor a locura | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
